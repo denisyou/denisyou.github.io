@@ -1,12 +1,10 @@
-package example.rick.denisyou;
+package example.rick.tablayoutdemo;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-
-import example.rick.tablayoutdemo.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         final Button toLogin = (Button) findViewById(R.id.toLogin);
         final Button toRegister = (Button) findViewById(R.id.toRegister);
-        final Button toAFL = (Button) findViewById(R.id.toAFL);
+        final Button toAFL = (Button) findViewById(R.id.totest);
         final Button totab = (Button) findViewById((R.id.totab));
 
         toLogin.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         toAFL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainAFL.class));
+                startActivity(new Intent(MainActivity.this, fortestpage.class));
             }
         });
 

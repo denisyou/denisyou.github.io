@@ -1,4 +1,4 @@
-package example.rick.denisyou;
+package example.rick.tablayoutdemo;
 
 /**
  * Created by Denis on 2016/10/29.

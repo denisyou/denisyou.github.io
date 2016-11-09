@@ -1,4 +1,4 @@
-package example.rick.denisyou;
+package example.rick.tablayoutdemo;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,8 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import example.rick.tablayoutdemo.R;
 
 /**
  * Created by Denis on 2016/10/30.
@@ -35,6 +33,9 @@ public class PageFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        if(mPage == 3) {
+            return inflater.inflate(R.layout.activity_student_status, container, false);
+        }
         View view = inflater.inflate(R.layout.pager_item,container,false);
         TextView textView = (TextView) view.findViewById(R.id.textView);
         textView.setText("第"+mPage+"頁");

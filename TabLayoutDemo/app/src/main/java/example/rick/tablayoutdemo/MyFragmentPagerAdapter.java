@@ -1,4 +1,4 @@
-package example.rick.denisyou;
+package example.rick.tablayoutdemo;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
@@ -9,8 +9,8 @@ import android.support.v4.app.FragmentPagerAdapter;
  * Created by Denis on 2016/10/30.
  */
 class MyFragmentPagerAdapter extends FragmentPagerAdapter {
-    public final int COUNT = 5;
-    private String[] titles = new String[]{"Tab1", "Tab2", "Tab3", "Tab4", "Tab5"};
+    public final int COUNT = 4;
+    private String[] titles = new String[]{"簽到", "出缺席", "個人資料", "設定"};
     private Context context;
 
     public MyFragmentPagerAdapter(FragmentManager fm, Context context) {

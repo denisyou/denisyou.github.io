@@ -93,12 +93,12 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="PaterTabStrip"
-            android:id="@+id/toAFL"
+            android:id="@+id/totest"
             android:layout_above="@+id/toLogin"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:text="testpage" />
 
         <Button
             android:layout_width="match_parent"
@@ -106,7 +106,7 @@
             android:text="TabLayout"
             android:textStyle="bold"
             android:id="@+id/totab"
-            android:layout_above="@+id/toAFL"
+            android:layout_above="@+id/totest"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 

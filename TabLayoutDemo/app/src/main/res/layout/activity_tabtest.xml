@@ -1,20 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tabLayout"
+    android:orientation="vertical"
+    android:id="@+id/dltest">
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:tabMode="scrollable"
-        />
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#93b5d8"
+            android:id="@+id/ttb"
+            app:title="ToolBarTest"
+            app:navigationIcon="@drawable/ic_menu_black_24dp"
+            app:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+            />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"
+            android:background="#e2e5f1"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            >
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#ffffff"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        app:headerLayout="@layout/nav_header_fortestpage"
+        app:menu="@menu/activity_fortestpage_drawer"
         />
-</LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
