@@ -1,35 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
-    </group>
+    <item android:title="消息">
+        <menu>
+            <item
+                android:id="@+id/nav_camera"
+                android:icon="@drawable/ic_receipt_black_24dp"
+                android:title="課程公告" />
+            <item
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/ic_style_black_24dp"
+                android:title="個人成就" />
+            <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/ic_av_timer_black_24dp"
+                android:title="出席紀錄" />
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/ic_card_giftcard_black_24dp"
+                android:title="獎勵兌換" />
+        </menu>
+    </item>
 
-    <item android:title="Communicate">
+    <item android:title="帳號">
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="設定" />
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:icon="@drawable/ic_keyboard_return_black_24dp"
+                android:title="登出" />
         </menu>
     </item>
 

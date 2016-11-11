@@ -10,7 +10,7 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 class MyFragmentPagerAdapter extends FragmentPagerAdapter {
     public final int COUNT = 4;
-    private String[] titles = new String[]{"簽到", "出缺席", "個人資料", "設定"};
+    private String[] titles = new String[]{"課程列表", "教授/助教資訊", "討論區", "幫助"};
     private Context context;
 
     public MyFragmentPagerAdapter(FragmentManager fm, Context context) {

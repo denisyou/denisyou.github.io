@@ -38,7 +38,7 @@ public class PageFragment extends Fragment {
         }
         View view = inflater.inflate(R.layout.pager_item,container,false);
         TextView textView = (TextView) view.findViewById(R.id.textView);
-        textView.setText("第"+mPage+"頁");
+        textView.setText("暫無任何課程訊息");
         textView.setTextSize(25);
         return view;
     }

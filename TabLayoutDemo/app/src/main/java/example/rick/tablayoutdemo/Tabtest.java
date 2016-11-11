@@ -1,5 +1,6 @@
 package example.rick.tablayoutdemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -12,7 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.TextView;
 
 
 public class Tabtest extends AppCompatActivity {
@@ -44,11 +45,14 @@ public class Tabtest extends AppCompatActivity {
 
 
         // nav
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.dltest);
+        final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.dltest);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
+
+        TextView navTV = (TextView) findViewById(R.id.nav_title);
+        navTV.setText("學生姓名");
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -61,18 +65,23 @@ public class Tabtest extends AppCompatActivity {
                int id = item.getItemId();
 
                if (id == R.id.nav_camera) {
-                   // Handle the camera action
+                   drawer.closeDrawer(GravityCompat.START);
+                   return true;
                } else if (id == R.id.nav_gallery) {
-                   Toast.makeText(Tabtest.this, "gallery",Toast.LENGTH_SHORT).show();
+                   drawer.closeDrawer(GravityCompat.START);
                    return true;
                } else if (id == R.id.nav_slideshow) {
-
+                   drawer.closeDrawer(GravityCompat.START);
+                   return true;
                } else if (id == R.id.nav_manage) {
-
+                   drawer.closeDrawer(GravityCompat.START);
+                   return true;
                } else if (id == R.id.nav_share) {
-
+                   drawer.closeDrawer(GravityCompat.START);
+                   return true;
                } else if (id == R.id.nav_send) {
-
+                   drawer.closeDrawer(GravityCompat.START);
+                   return true;
                }
 
            return false;
@@ -125,7 +134,7 @@ public class Tabtest extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Toast.makeText(Tabtest.this, "GOOD!",Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, CoursePost.class));
             return true;
         }
 
